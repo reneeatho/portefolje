@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="model.js"></script>
+    <script src="viewStart.js"></script>
+    <script src="controller.js"></script>
+    <script src="viewProjects.js"></script>
+    <script src="viewEducation.js"></script>
+    <script src="viewPreferences.js"></script>
+    <script src="viewAboutMe.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap" rel="stylesheet">
+    <title>Portefølje</title>
+</head>
+<body>
+    <div id='app'></div>
+
+    <script>
+
+
+        let appDiv = document.getElementById('app');
+        updateView();
+
+        function updateView() {
+            let html = '';
+            const page = model.app.currentPage;
+            if (page === 'Start') html = updateViewStart();
+            else if (page === 'AboutMe') html = updateViewAboutMe();
+            else if (page === 'Education') html = updateViewEducation();
+            else if (page === 'Preferences') html = updateViewPreferences();
+            else if (page === 'Projects') html = updateViewProjects();
+           
+
+            appDiv.innerHTML = html;      
+        }
+    </script>
+    
+</body>
+</html>

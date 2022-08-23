@@ -1,0 +1,139 @@
+body
+{
+    font-family: 'Edu SA Beginner', cursive;
+    background-color: black;
+
+    height: 100vh;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-areas:'header'
+                        'middle'
+                        'footer';
+}
+
+.header
+{
+    height: 120px;
+    color: white;
+    font-size: 20px;
+
+    grid-area: header;
+}
+
+
+ul 
+{
+    list-style-type: none;
+    font-size: 20px;
+}
+
+h1
+{
+    font-size: 40px;
+    margin: 0px;
+}
+
+
+.headline 
+{
+    margin-left: 40px;  
+}
+
+.button
+{
+    width: 110px;
+    height: 30px; 
+    margin-top: 15px;
+    border-radius: 200px;
+    margin-left: 10px;
+    background-color: grey;
+    text-align: center; 
+    float: left;
+}
+
+.button:hover
+{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.button:active
+{
+    background-color: lightslategray;
+    color: black;
+}
+
+.aboutMe
+{ 
+    color: white;  
+}
+
+.middle {
+    
+    margin-top:200px;
+    vertical-align: middle;
+    align-items: center;
+    color: white;
+    grid-area: middle;
+    font-size: 24px;
+}
+
+.btn 
+{
+    width: 250px;
+    height: 80px; 
+    margin-top: 10px;
+    border-radius: 200px;
+    margin-left: 10px;
+    background-color: gray;
+    color: white;
+    font-family: 'Edu SA Beginner', cursive;
+    font-size: 50px;
+    float: left;
+    text-align: center;
+}
+
+.footer
+{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    color: white;
+    grid-area: footer;
+   
+}
+
+.socials
+{
+    color: white;
+    padding-bottom: 10px;
+    float: left;
+    display: inline-flex;
+    
+}
+
+.social
+{
+    margin-left: 5px;
+   
+}
+
+.myself
+{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    justify-content: flex-end;
+    margin-left: 700px;
+    margin-top: -70px;
+}
+
+.wall
+{
+    margin-top: 10px;
+    height: 500px;
+}
+
+
